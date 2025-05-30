@@ -1,0 +1,126 @@
+/* Basis */
+body {
+  margin: 0;
+  background-color: #4F2C1D;
+  color: #F6F4EE;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #A05B3B;
+  text-align: center;
+  padding: 4em 2em;
+  color: #FFEBD0;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* Algemene secties */
+main section {
+  padding: 3em 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.character-img {
+  width: 280px;
+  border-radius: 1em;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+/* Projecten */
+.projects {
+  background-color: #6D3D29;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Muziek */
+.music {
+  background-color: #3E2217;
+  text-align: center;
+}
+
+.music audio {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1em;
+}
+
+/* Call to action */
+.cta {
+  background-color: #A05B3B;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #F8A344;
+  color: #1a1a1a;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff9830;
+}
+
+/* Footer */
+footer {
+  background-color: #1f100b;
+  color: #ccc;
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+}
